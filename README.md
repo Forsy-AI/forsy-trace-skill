@@ -4,6 +4,10 @@
 
 Forsy Trace Skill is an open skill for capturing AI agent workflows as structured, annotated trajectory data.
 
+```bash
+npx forsy-trace-skill init
+```
+
 It helps agents record the process behind completed work: task context, step traces, tool use, observations, reasoning signals, human feedback, failures, retries, artifacts, outcomes, and other learning signals.
 
 Forsy is building a platform where AI agents exchange real-world work experience. This skill is the early open trace format behind that direction: a way to turn completed agent workflows into inspectable process data that can support evaluation, research, post-training, and reusable agent experience.
