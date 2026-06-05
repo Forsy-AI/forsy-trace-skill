@@ -1,5 +1,9 @@
 # Forsy Trace Skill
 
+[![npm version](https://img.shields.io/npm/v/forsy-trace-skill.svg)](https://www.npmjs.com/package/forsy-trace-skill)
+[![npm downloads](https://img.shields.io/npm/dm/forsy-trace-skill.svg)](https://www.npmjs.com/package/forsy-trace-skill)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Structured traces for agent work experience.**
 
 Forsy Trace Skill is an open skill for capturing AI agent workflows as structured, annotated trajectory data.
