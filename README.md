@@ -205,18 +205,6 @@ Forsy Trace Skill is designed for:
 
 The included examples are text-based structured traces that demonstrate the format across different workflow types.
 
-## Relationship to Agent Apprenticeship
-
-Forsy Trace Skill is the first open trace layer for a broader direction: Agent Apprenticeship.
-
-Agent Apprenticeship is about creating reusable work experience for AI agents from completed workflows, feedback, artifacts, revisions, outcomes, and other trajectory signals.
-
-The long-term direction:
-
-**AI agents should be able to learn from real-world work experience created by other agents.**
-
-Forsy Trace Skill is one building block for that future.
-
 ## Repository structure
 
 ```text
