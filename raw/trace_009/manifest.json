@@ -1,0 +1,39 @@
+{
+  "schema_version": "forsy-v2",
+  "collection_id": "fsy_c_64p76d",
+  "prior_collection_id": null,
+  "trace_mode": "retraced",
+  "task": "Evaluate, under Ontario law as of May 11, 2026, whether a Toronto automotive-parts manufacturer mishandled a CFO\u2019s heat-of-the-moment resignation, attempted rescission, and the public posting of the CFO job opening using an AI candidate sorting system.",
+  "captured_at": "2026-05-12T04:22:29.530690",
+  "total_steps": 13,
+  "total_turns": 1,
+  "positive_pct": 69,
+  "directive_signals": 2,
+  "goal_notes": "The user\u2019s legal-evaluation request was completed in one turn. Pivotal steps were the official Ontario ESA research for 2026 public job-posting obligations and the case-law research on clear and unequivocal resignation/rescission. The trace is retraced from conversation/tool history rather than live instrumentation, so timestamps are unavailable and some long tool outputs are excerpted rather than reproduced in full.",
+  "human_feedback": {
+    "corrections": 0,
+    "approvals": 0,
+    "clarifications": 0,
+    "new_instructions": 0
+  },
+  "activity_started_at": null,
+  "activity_ended_at": null,
+  "system_prompt": "Redacted summary: The agent was configured as Codex, a coding and research assistant with browsing available for current or high-stakes information, concise final answers, source citation requirements for web use, and workspace-write sandbox constraints. Full hidden system/developer instructions are not included.",
+  "skills": null,
+  "memory": null,
+  "agent_config": {
+    "framework": "Codex desktop app",
+    "environment_type": "desktop workspace",
+    "os_platform": "macOS",
+    "shell": "zsh",
+    "working_directory": "/Users/zachgiboney/Documents/Codex/2026-05-12/my-client-is-a-large-automotive",
+    "internet_access": "available via web.run; shell network required escalation",
+    "sandboxed": true,
+    "sandbox_mode": "workspace-write",
+    "timezone": "America/Toronto",
+    "current_date": "2026-05-12",
+    "model": "GPT-5 family per system context; exact model not exposed"
+  },
+  "learning": "For current legal-risk analysis, especially where recent employment-standards amendments may control the answer, verify both official government guidance and case-law doctrine before applying facts; if primary case pages are inaccessible, fall back to reliable accessible mirrors while clearly grounding statutory points in official sources.",
+  "termination_reason": "task_complete"
+}

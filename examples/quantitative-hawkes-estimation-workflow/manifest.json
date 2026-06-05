@@ -1,0 +1,54 @@
+{
+  "activity_ended_at": "2026-04-24T00:00:00Z",
+  "activity_started_at": null,
+  "agent_confidence": 70,
+  "agent_config": {
+    "environment_type": "container",
+    "internet_access": true,
+    "model_family": "GPT-5.3-Codex",
+    "sandbox_mode": "danger-full-access",
+    "shell": "bash",
+    "working_directory": "/workspace/hawkes-estimation"
+  },
+  "captured_at": "2026-04-24T19:43:52.360167",
+  "collection_id": "fsy_c_83tj5a",
+  "directive_signals": 3,
+  "formats_available": [
+    "csv",
+    "json",
+    "jsonl",
+    "py"
+  ],
+  "goal_achieved": true,
+  "goal_notes": "The collection captures retraced session activity anchored to the visible conversation history and known repository artifacts, including the initial Hawkes deliverable and subsequent corrective user feedback.",
+  "human_feedback": {
+    "approvals": 0,
+    "clarifications": 0,
+    "corrections": 2,
+    "new_instructions": 1
+  },
+  "learning": "For retraced engineering sessions, anchor every step to verifiable artifacts (commits, files, test commands, and user messages) and avoid inventing hidden intermediate actions.",
+  "memory": null,
+  "original_folder_name": "trace_007",
+  "positive_pct": 50,
+  "prior_collection_id": null,
+  "prior_trace_id": null,
+  "schema_version": "forsy-v1",
+  "skills": null,
+  "source_files": {
+    "manifest": "raw/trace_007/manifest.json",
+    "trace": "raw/trace_007/data.json"
+  },
+  "source_folder_names": [
+    "trace_007"
+  ],
+  "source_trace_id": "fsy_c_83tj5a",
+  "system_prompt": null,
+  "task": "Implement and validate a bivariate Hawkes process estimator with O(N) recursive exponential-kernel MLE and generate a formatted Excel report for a quant-trading client, then handle follow-up review feedback.",
+  "termination_reason": "user_directed_submit",
+  "total_steps": 8,
+  "total_turns": 4,
+  "trace_id": "fsy_c_83tj5a",
+  "trace_mode": "retraced",
+  "trace_slug": "quantitative-hawkes-estimation-workflow"
+}

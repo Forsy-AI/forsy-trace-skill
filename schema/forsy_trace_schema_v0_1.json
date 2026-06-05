@@ -1,0 +1,464 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forsy.ai/schemas/forsy_trace_schema_v0_1.json",
+  "title": "Forsy Trace Schema v0.1",
+  "description": "Common public structure for text-based structured agent work traces. Legacy fields are allowed so older traces remain usable.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "task",
+    "steps"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "trace_id"
+      ]
+    },
+    {
+      "required": [
+        "collection_id"
+      ]
+    }
+  ],
+  "properties": {
+    "schema_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Trace schema version. Legacy values are preserved when present."
+    },
+    "trace_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Canonical public trace identifier. Legacy collection_id values are mapped here when available."
+    },
+    "source_trace_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original source identifier from the raw trace before public normalization."
+    },
+    "collection_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Legacy trace collection identifier preserved for compatibility."
+    },
+    "prior_trace_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Canonical pointer to a prior trace when the trace is a continuation."
+    },
+    "prior_collection_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Legacy prior collection identifier preserved for compatibility."
+    },
+    "trace_slug": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Readable filesystem-safe public example slug."
+    },
+    "original_folder_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original raw folder name from which the normalized example was produced."
+    },
+    "source_folder_names": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "description": "Raw folder names represented by this normalized example. Exact duplicate raw traces may map to one public example."
+    },
+    "trace_mode": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "live",
+        "retraced",
+        "hybrid",
+        null
+      ],
+      "description": "Whether the trace was captured live, retraced from evidence, or captured through a mixed process."
+    },
+    "task": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ],
+      "description": "The task or work objective that the trace captures."
+    },
+    "agent_model": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "agent_tools": {
+      "type": [
+        "array",
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "captured_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "started_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ended_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "system_prompt": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "skills": {
+      "type": [
+        "array",
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "memory": {
+      "type": [
+        "array",
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "agent_config": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      },
+      "description": "Ordered step nodes representing user messages, agent actions, tool calls, observations, retries, feedback, and outcome-relevant state changes."
+    },
+    "learning": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "termination_reason": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "final_output": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "static_output": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "summary": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "dataset_summary": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "source_files": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Bookkeeping references to raw source files used during normalization."
+    }
+  },
+  "$defs": {
+    "step": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "step": {
+          "type": [
+            "integer",
+            "number",
+            "string",
+            "null"
+          ]
+        },
+        "step_index": {
+          "type": [
+            "integer",
+            "number",
+            "string",
+            "null"
+          ]
+        },
+        "turn": {
+          "type": [
+            "integer",
+            "number",
+            "string",
+            "null"
+          ]
+        },
+        "actor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "action": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tool": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "execution_mode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parallel_group": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ]
+        },
+        "observation": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "input": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "input_source": {
+          "type": [
+            "string",
+            "object",
+            "null"
+          ]
+        },
+        "output": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "state_change": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "reasoning": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "caused_by": {
+          "type": [
+            "integer",
+            "number",
+            "string",
+            "array",
+            "null"
+          ]
+        },
+        "causal_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "causal_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "alternatives_considered": {
+          "type": [
+            "string",
+            "array",
+            "object",
+            "null"
+          ]
+        },
+        "success": {
+          "type": [
+            "boolean",
+            "string",
+            "null"
+          ]
+        },
+        "eval": {
+          "type": [
+            "integer",
+            "number",
+            "string",
+            "object",
+            "null"
+          ]
+        },
+        "eval_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "directive": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "message_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "feedback": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "feedback_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "feedback_content": {
+          "type": [
+            "string",
+            "object",
+            "array",
+            "null"
+          ]
+        },
+        "started_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ended_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retry_of": {
+          "type": [
+            "integer",
+            "number",
+            "string",
+            "array",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

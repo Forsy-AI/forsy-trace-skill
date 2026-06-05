@@ -1,0 +1,26 @@
+{
+  "name": "forsy-trace-skill",
+  "version": "0.1.0",
+  "description": "Open skill for capturing AI agent workflows as structured process traces.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsy-AI/forsy-trace-skill.git"
+  },
+  "homepage": "https://github.com/Forsy-AI/forsy-trace-skill",
+  "bin": {
+    "forsy-trace-skill": "bin/forsy-trace-skill.js"
+  },
+  "files": [
+    "bin/",
+    "schema/",
+    "skill.md",
+    "CITATION.cff"
+  ],
+  "scripts": {
+    "test": "node bin/forsy-trace-skill.js --help"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

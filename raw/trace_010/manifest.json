@@ -1,0 +1,31 @@
+{
+  "schema_version": "forsy-v2",
+  "collection_id": "fsy_c_wgd0ll",
+  "prior_collection_id": null,
+  "trace_mode": "live",
+  "task": "Workflow to optimise settings for injection moulder (Engel 20t, unfilled PP, pin-gate-at-hub-centre polymer gear; goal = dimensional accuracy + no flaws/voids + best mechanical properties)",
+  "captured_at": "2026-05-01T20:48:16.267633",
+  "total_steps": 10,
+  "total_turns": 10,
+  "positive_pct": 50,
+  "directive_signals": 1,
+  "goal_notes": "User satisfied with workflow and recalibration. No process data captured this session -- user deferred running shots. Workflow + pre-flight checklist + parameter ranking delivered. Next step: user runs Step 0 baseline and reports numbers.",
+  "human_feedback": {
+    "back_pressure_challenge": "User correctly challenged back pressure being framed as auxiliary. Agent recalibrated -- BP is top-tier for shear-sensitive PP with mechanical-property goals.",
+    "outcome": "good"
+  },
+  "activity_started_at": "2026-05-01T13:00:00Z",
+  "activity_ended_at": "2026-05-01T14:45:00Z",
+  "system_prompt": "Claude Code default system prompt + global CLAUDE.md user rules (fix-the-system-not-the-instance, quality-over-effort, do-don't-ask, parallelism, subagent discipline, evaluator triggers).",
+  "skills": [
+    "using-superpowers (auto-loaded at session start)",
+    "Forsy submission contract (fetched via WebFetch from https://formachine.forsy.ai/skill.md)"
+  ],
+  "memory": "Auto-memory at /Users/senhuoltd/.claude/projects/-Users-senhuoltd/memory/MEMORY.md",
+  "agent_config": {
+    "model": "claude-opus-4-7-1m",
+    "platform": "Claude Code (darwin 25.4.0, zsh)"
+  },
+  "learning": "For unfilled PP gears with pin-gate-at-hub geometry, the dominant defect mode is internal hub voids. Counter with: pack pressure in upper datasheet range, pack time >= gate-seal time, mould temp warm enough to keep hub fluid until pack arrives. When the optimisation goal includes mechanical properties, back pressure and melt temperature rise from auxiliary to top-tier importance because PP is shear-sensitive: excess recovery shear degrades molecular weight, which directly reduces tensile strength, toughness, creep resistance, and gear-tooth wear life.",
+  "termination_reason": "completed"
+}

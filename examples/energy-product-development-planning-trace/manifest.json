@@ -1,0 +1,57 @@
+{
+  "activity_ended_at": "2026-05-14T16:01:53Z",
+  "activity_started_at": "2026-05-14T15:52:44Z",
+  "agent_config": {
+    "agent_or_harness": "Codex",
+    "current_date": "2026-05-14",
+    "environment_type": "local workspace with sandboxed tool execution",
+    "internet_access": "web.run browsing available; shell network access restricted",
+    "model_context": "GPT-5 Codex family per accessible developer instructions; exact runtime identifier not exposed",
+    "node_version": "v25.8.1",
+    "os_platform": "Darwin Mac-4334 25.4.0 arm64",
+    "python_version": "Python 3.14.0",
+    "redaction": "API keys and credentials omitted from trace body where not strictly required",
+    "sandbox_mode": "workspace-write",
+    "sandboxed": true,
+    "shell": "zsh",
+    "timezone": "Europe/London",
+    "working_directory": "/Users/senhuoltd"
+  },
+  "captured_at": "2026-05-14T16:08:05.618967",
+  "collection_id": "fsy_c_g8ahxl",
+  "directive_signals": 4,
+  "goal_notes": "The user wanted the tablet-app waterfall flow itself to be created in session so it could be captured by Forsy. The session now contains authentic workflow-definition activity and a resulting collection file that traces that work, including the later refinement that added Discovery as the first phase.",
+  "human_feedback": {
+    "approvals": 2,
+    "clarifications": 3,
+    "corrections": 2,
+    "new_instructions": 1
+  },
+  "learning": "When the user wants a workflow captured in Forsy, the correct path is to perform the workflow-definition work in-session first, then trace that authentic activity rather than treating the absence of prior artifacts as the final outcome.",
+  "memory": null,
+  "original_folder_name": "trace_011",
+  "positive_pct": 90,
+  "prior_collection_id": null,
+  "prior_trace_id": null,
+  "schema_version": "forsy-v2",
+  "skills": [
+    "external Forsy Collection Skill from https://formachine.forsy.ai/skill.md",
+    "superpowers:brainstorming"
+  ],
+  "source_files": {
+    "manifest": "raw/trace_011/manifest.json",
+    "trace": "raw/trace_011/data.json"
+  },
+  "source_folder_names": [
+    "trace_011"
+  ],
+  "source_trace_id": "fsy_c_g8ahxl",
+  "system_prompt": "Original private system and developer instructions are omitted. Accessible summary: Codex is a pragmatic coding assistant with browsing, terminal execution, file editing, browser automation, image generation, and optional subagent capabilities under workspace-write sandbox constraints.",
+  "task": "Define and trace a high-level waterfall flow for building a generic tablet app for an energy company",
+  "termination_reason": "task_completed",
+  "total_steps": 11,
+  "total_turns": 11,
+  "trace_id": "fsy_c_g8ahxl",
+  "trace_mode": "live",
+  "trace_slug": "energy-tablet-app-waterfall-planning-trace"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "forsy-v1",
+  "collection_id": "fsy_c_83tj5a",
+  "prior_collection_id": null,
+  "trace_mode": "retraced",
+  "task": "Implement and validate a bivariate Hawkes process estimator with O(N) recursive exponential-kernel MLE and generate a formatted Excel report for a quant-trading client, then handle follow-up review feedback.",
+  "captured_at": "2026-04-24T19:43:52.360167",
+  "total_steps": 8,
+  "total_turns": 4,
+  "positive_pct": 50,
+  "directive_signals": 3,
+  "agent_confidence": 70,
+  "goal_achieved": true,
+  "goal_notes": "The collection captures retraced session activity anchored to the visible conversation history and known repository artifacts, including the initial Hawkes deliverable and subsequent corrective user feedback.",
+  "human_feedback": {
+    "corrections": 2,
+    "approvals": 0,
+    "clarifications": 0,
+    "new_instructions": 1
+  },
+  "formats_available": [
+    "csv",
+    "json",
+    "jsonl",
+    "py"
+  ],
+  "activity_started_at": null,
+  "activity_ended_at": "2026-04-24T00:00:00Z",
+  "system_prompt": null,
+  "skills": null,
+  "memory": null,
+  "agent_config": {
+    "model_family": "GPT-5.3-Codex",
+    "environment_type": "container",
+    "shell": "bash",
+    "working_directory": "/workspace/hawkes-estimation",
+    "internet_access": true,
+    "sandbox_mode": "danger-full-access"
+  },
+  "learning": "For retraced engineering sessions, anchor every step to verifiable artifacts (commits, files, test commands, and user messages) and avoid inventing hidden intermediate actions.",
+  "termination_reason": "user_directed_submit"
+}

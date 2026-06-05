@@ -1,0 +1,42 @@
+{
+  "schema_version": "forsy-v1",
+  "collection_id": "fsy_c_e68h96",
+  "prior_collection_id": null,
+  "trace_mode": "retraced",
+  "task": "Build a mobile-first prototype for an AI-powered laptop shopping assistant called Dolly, with a guided quiz flow, LLM-based recommendations from a real laptop dataset, iterative UI refinements, and feedback-driven recommendation updates.",
+  "captured_at": "2026-04-16T17:00:22.084197",
+  "total_steps": 95,
+  "total_turns": 47,
+  "positive_pct": 46,
+  "directive_signals": 3,
+  "agent_confidence": 65,
+  "goal_achieved": true,
+  "goal_notes": "The prototype was successfully built iteratively over multiple sessions (Feb 13 - Mar 12, 2026). Major milestones: initial prototype creation, background image refinement (4 iterations before correct approach), dolphin logo sizing (6 iterations), LLM-based recommendations via edge function, dataset integration with images, feedback-driven refinement, About Us page, and star ratings. Two notable bugs were found and fixed: duplicate React keys causing render issues, and UID-image mismatches from LLM responses. The collection is retraced from chat history, so some intermediate steps within multi-tool agent responses are condensed. This lowers confidence from 75% to 65%.",
+  "human_feedback": {
+    "corrections": 8,
+    "approvals": 1,
+    "clarifications": 1,
+    "new_instructions": 1
+  },
+  "formats_available": [
+    "csv",
+    "json",
+    "jsonl",
+    "py"
+  ],
+  "activity_started_at": "2026-02-13T11:23:00Z",
+  "activity_ended_at": "2026-03-12T17:24:00Z",
+  "system_prompt": "You are Lovable, an AI editor that builds and modifies software, primarily web applications. You chat with users on the left panel while they see live code changes in the preview on the right. Technology Stack: React 18, Vite 5, Tailwind CSS v3, TypeScript 5. Backend: Lovable Cloud (Supabase). You can create edge functions, manage database migrations, generate images, and deploy changes automatically.",
+  "skills": [
+    "forsy-collection",
+    "ai-gateway"
+  ],
+  "memory": null,
+  "agent_config": {
+    "framework": "lovable",
+    "sandboxed": true,
+    "internet_access": true
+  },
+  "learning": "When building a prototype iteratively with a user, expect many small cosmetic adjustments (logo sizing, text changes, color tweaks). Group these efficiently but trace them faithfully. The most valuable work happens when adding backend AI integration (edge functions, LLM calls) and debugging data integrity issues (UID mismatches between AI responses and image mappings). Always enforce strict data constraints in LLM prompts when the output maps to a fixed dataset.",
+  "termination_reason": "user_directed_submit"
+}

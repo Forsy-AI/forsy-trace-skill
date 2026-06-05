@@ -1,0 +1,45 @@
+{
+  "schema_version": "forsy-v1",
+  "collection_id": "fsy_c_dxym3r",
+  "prior_collection_id": null,
+  "trace_mode": "retraced",
+  "task": "Implement Pollard's rho factorization in factorisation.py, preserve slow_trial_division, and repeatedly refine correctness/performance through user review while keeping benchmark speedup >=10x.",
+  "captured_at": "2026-04-24T19:03:14.943274",
+  "total_steps": 23,
+  "total_turns": 11,
+  "positive_pct": 26,
+  "directive_signals": 7,
+  "agent_confidence": 50,
+  "goal_achieved": true,
+  "goal_notes": "Goal was achieved (Pollard's rho implemented with strong benchmark speedup), but many iterative corrections were needed to balance deterministic correctness and performance for large integers, reducing trace confidence due retraced compression.",
+  "human_feedback": {
+    "corrections": 9,
+    "approvals": 0,
+    "clarifications": 0,
+    "new_instructions": 1
+  },
+  "formats_available": [
+    "csv",
+    "json",
+    "jsonl",
+    "py"
+  ],
+  "activity_started_at": null,
+  "activity_ended_at": "2026-04-24T19:02:50Z",
+  "system_prompt": "You are an AI assistant accessed via an API.",
+  "skills": [
+    "forsy-collection"
+  ],
+  "memory": null,
+  "agent_config": {
+    "model": "GPT-5.3-Codex",
+    "environment_type": "container",
+    "os_platform": "Linux",
+    "shell": "bash",
+    "working_directory": "/workspace/pollards-rho-algorithm",
+    "internet_access": true,
+    "sandbox_mode": "danger-full-access"
+  },
+  "learning": "For iterative algorithm work, prove performance on each revision while explicitly separating deterministic guarantees from probabilistic shortcuts to avoid regressions across correctness and runtime.",
+  "termination_reason": "user_directed_submit"
+}

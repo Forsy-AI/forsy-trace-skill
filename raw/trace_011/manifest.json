@@ -1,0 +1,45 @@
+{
+  "schema_version": "forsy-v2",
+  "collection_id": "fsy_c_g8ahxl",
+  "prior_collection_id": null,
+  "trace_mode": "live",
+  "task": "Define and trace a high-level waterfall flow for building a generic tablet app for an energy company",
+  "captured_at": "2026-05-14T16:08:05.618967",
+  "total_steps": 11,
+  "total_turns": 11,
+  "positive_pct": 90,
+  "directive_signals": 4,
+  "goal_notes": "The user wanted the tablet-app waterfall flow itself to be created in session so it could be captured by Forsy. The session now contains authentic workflow-definition activity and a resulting collection file that traces that work, including the later refinement that added Discovery as the first phase.",
+  "human_feedback": {
+    "corrections": 2,
+    "approvals": 2,
+    "clarifications": 3,
+    "new_instructions": 1
+  },
+  "activity_started_at": "2026-05-14T15:52:44Z",
+  "activity_ended_at": "2026-05-14T16:01:53Z",
+  "system_prompt": "Original private system and developer instructions are omitted. Accessible summary: Codex is a pragmatic coding assistant with browsing, terminal execution, file editing, browser automation, image generation, and optional subagent capabilities under workspace-write sandbox constraints.",
+  "skills": [
+    "external Forsy Collection Skill from https://formachine.forsy.ai/skill.md",
+    "superpowers:brainstorming"
+  ],
+  "memory": null,
+  "agent_config": {
+    "agent_or_harness": "Codex",
+    "model_context": "GPT-5 Codex family per accessible developer instructions; exact runtime identifier not exposed",
+    "environment_type": "local workspace with sandboxed tool execution",
+    "os_platform": "Darwin Mac-4334 25.4.0 arm64",
+    "shell": "zsh",
+    "working_directory": "/Users/senhuoltd",
+    "python_version": "Python 3.14.0",
+    "node_version": "v25.8.1",
+    "sandboxed": true,
+    "sandbox_mode": "workspace-write",
+    "internet_access": "web.run browsing available; shell network access restricted",
+    "timezone": "Europe/London",
+    "current_date": "2026-05-14",
+    "redaction": "API keys and credentials omitted from trace body where not strictly required"
+  },
+  "learning": "When the user wants a workflow captured in Forsy, the correct path is to perform the workflow-definition work in-session first, then trace that authentic activity rather than treating the absence of prior artifacts as the final outcome.",
+  "termination_reason": "task_completed"
+}

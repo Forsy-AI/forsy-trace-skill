@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Forsy Trace Skill: Structured Agent Work Traces"
+message: "If you use Forsy Trace Skill, please cite it using this metadata."
+type: software
+authors:
+  - name: "Forsy"
+version: "0.1.0"
+date-released: "2026-06-05"
+url: "https://github.com/Forsy-AI/forsy-trace-skill"
+repository-code: "https://github.com/Forsy-AI/forsy-trace-skill"
+abstract: "Forsy Trace Skill is an open skill for turning AI agent work into structured process traces, capturing task context, actions, tool use, observations, feedback, failures, artifacts, and outcomes from text-based agent workflows."
+keywords:
+  - ai-agents
+  - agent-traces
+  - tool-use
+  - process-supervision
+  - agent-evaluation
+  - workflow-traces
+  - post-training-data
+license: "MIT"

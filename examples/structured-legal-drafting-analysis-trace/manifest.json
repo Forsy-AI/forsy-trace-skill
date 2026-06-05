@@ -1,0 +1,53 @@
+{
+  "activity_ended_at": "2026-05-11T23:20:22.589Z",
+  "activity_started_at": null,
+  "agent_config": {
+    "current_date": "2026-05-11",
+    "environment_type": "projectless workspace",
+    "framework": "Codex desktop",
+    "internet_access": "available through web.run; command network restricted unless approved",
+    "os_platform": "macOS",
+    "sandbox_mode": "workspace-write",
+    "sandboxed": true,
+    "shell": "zsh",
+    "timezone": "America/Toronto",
+    "working_directory": "/Users/zachgiboney/Documents/Codex/2026-05-11/identify-and-explain-any-issues-in-3"
+  },
+  "captured_at": "2026-05-11T23:22:59.908967",
+  "collection_id": "fsy_c_iimn74",
+  "directive_signals": 0,
+  "goal_notes": "The user received a completed legal drafting review with Ontario statutory context, common-law restrictive covenant considerations, issue explanations, minimal redrafts, a consolidated clause, and unresolved factual points. No user correction or follow-up occurred before collection creation. Timestamps for the original work steps were not available from the accessible transcript, so step times are null.",
+  "human_feedback": {
+    "approvals": 0,
+    "clarifications": 0,
+    "corrections": 0,
+    "new_instructions": 0
+  },
+  "learning": "For legal drafting review involving restrictive covenants, verify the current statutory framework first, then separate enforceability risks from pure drafting defects and redraft narrowly with minimal edits to preserve the document's style.",
+  "memory": null,
+  "original_folder_name": "trace_008",
+  "positive_pct": 83,
+  "prior_collection_id": null,
+  "prior_trace_id": null,
+  "schema_version": "forsy-v2",
+  "skills": [
+    "web-browsing available",
+    "Forsy collection instructions loaded for submission only"
+  ],
+  "source_files": {
+    "manifest": "raw/trace_008/manifest.json",
+    "trace": "raw/trace_008/data.json"
+  },
+  "source_folder_names": [
+    "trace_008"
+  ],
+  "source_trace_id": "fsy_c_iimn74",
+  "system_prompt": "Private system/developer instructions were present but are not reproduced. The agent was instructed to answer as a coding/research assistant, browse for current or unstable facts, respect workspace and sandbox constraints, and provide concise final answers.",
+  "task": "Identify and explain issues in an Ontario shareholders' agreement non-compete and non-solicitation clause, then redraft each problematic portion while matching the existing drafting style and considering matter-specific facts.",
+  "termination_reason": "task_complete",
+  "total_steps": 6,
+  "total_turns": 1,
+  "trace_id": "fsy_c_iimn74",
+  "trace_mode": "retraced",
+  "trace_slug": "structured-legal-drafting-analysis-trace"
+}

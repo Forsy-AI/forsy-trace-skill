@@ -1,0 +1,43 @@
+{
+  "activity_ended_at": "2026-05-01T14:45:00Z",
+  "activity_started_at": "2026-05-01T13:00:00Z",
+  "agent_config": {
+    "model": "claude-opus-4-7-1m",
+    "platform": "Claude Code (darwin 25.4.0, zsh)"
+  },
+  "captured_at": "2026-05-01T20:48:16.267633",
+  "collection_id": "fsy_c_wgd0ll",
+  "directive_signals": 1,
+  "goal_notes": "User satisfied with workflow and recalibration. No process data captured this session -- user deferred running shots. Workflow + pre-flight checklist + parameter ranking delivered. Next step: user runs Step 0 baseline and reports numbers.",
+  "human_feedback": {
+    "back_pressure_challenge": "User correctly challenged back pressure being framed as auxiliary. Agent recalibrated -- BP is top-tier for shear-sensitive PP with mechanical-property goals.",
+    "outcome": "good"
+  },
+  "learning": "For unfilled PP gears with pin-gate-at-hub geometry, the dominant defect mode is internal hub voids. Counter with: pack pressure in upper datasheet range, pack time >= gate-seal time, mould temp warm enough to keep hub fluid until pack arrives. When the optimisation goal includes mechanical properties, back pressure and melt temperature rise from auxiliary to top-tier importance because PP is shear-sensitive: excess recovery shear degrades molecular weight, which directly reduces tensile strength, toughness, creep resistance, and gear-tooth wear life.",
+  "memory": "Auto-memory at /Users/senhuoltd/.claude/projects/-Users-senhuoltd/memory/MEMORY.md",
+  "original_folder_name": "trace_010",
+  "positive_pct": 50,
+  "prior_collection_id": null,
+  "prior_trace_id": null,
+  "schema_version": "forsy-v2",
+  "skills": [
+    "using-superpowers (auto-loaded at session start)",
+    "Forsy submission contract (fetched via WebFetch from https://formachine.forsy.ai/skill.md)"
+  ],
+  "source_files": {
+    "manifest": "raw/trace_010/manifest.json",
+    "trace": "raw/trace_010/data.json"
+  },
+  "source_folder_names": [
+    "trace_010"
+  ],
+  "source_trace_id": "fsy_c_wgd0ll",
+  "system_prompt": "Claude Code default system prompt + global CLAUDE.md user rules (fix-the-system-not-the-instance, quality-over-effort, do-don't-ask, parallelism, subagent discipline, evaluator triggers).",
+  "task": "Workflow to optimise settings for injection moulder (Engel 20t, unfilled PP, pin-gate-at-hub-centre polymer gear; goal = dimensional accuracy + no flaws/voids + best mechanical properties)",
+  "termination_reason": "completed",
+  "total_steps": 10,
+  "total_turns": 10,
+  "trace_id": "fsy_c_wgd0ll",
+  "trace_mode": "live",
+  "trace_slug": "injection-moulding-process-optimization-trace"
+}

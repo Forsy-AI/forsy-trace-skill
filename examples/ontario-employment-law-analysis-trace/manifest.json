@@ -1,0 +1,51 @@
+{
+  "activity_ended_at": null,
+  "activity_started_at": null,
+  "agent_config": {
+    "current_date": "2026-05-12",
+    "environment_type": "desktop workspace",
+    "framework": "Codex desktop app",
+    "internet_access": "available via web.run; shell network required escalation",
+    "model": "GPT-5 family per system context; exact model not exposed",
+    "os_platform": "macOS",
+    "sandbox_mode": "workspace-write",
+    "sandboxed": true,
+    "shell": "zsh",
+    "timezone": "America/Toronto",
+    "working_directory": "/Users/zachgiboney/Documents/Codex/2026-05-12/my-client-is-a-large-automotive"
+  },
+  "captured_at": "2026-05-12T04:22:29.530690",
+  "collection_id": "fsy_c_64p76d",
+  "directive_signals": 2,
+  "goal_notes": "The user’s legal-evaluation request was completed in one turn. Pivotal steps were the official Ontario ESA research for 2026 public job-posting obligations and the case-law research on clear and unequivocal resignation/rescission. The trace is retraced from conversation/tool history rather than live instrumentation, so timestamps are unavailable and some long tool outputs are excerpted rather than reproduced in full.",
+  "human_feedback": {
+    "approvals": 0,
+    "clarifications": 0,
+    "corrections": 0,
+    "new_instructions": 0
+  },
+  "learning": "For current legal-risk analysis, especially where recent employment-standards amendments may control the answer, verify both official government guidance and case-law doctrine before applying facts; if primary case pages are inaccessible, fall back to reliable accessible mirrors while clearly grounding statutory points in official sources.",
+  "memory": null,
+  "original_folder_name": "trace_009",
+  "positive_pct": 69,
+  "prior_collection_id": null,
+  "prior_trace_id": null,
+  "schema_version": "forsy-v2",
+  "skills": null,
+  "source_files": {
+    "manifest": "raw/trace_009/manifest.json",
+    "trace": "raw/trace_009/data.json"
+  },
+  "source_folder_names": [
+    "trace_009"
+  ],
+  "source_trace_id": "fsy_c_64p76d",
+  "system_prompt": "Redacted summary: The agent was configured as Codex, a coding and research assistant with browsing available for current or high-stakes information, concise final answers, source citation requirements for web use, and workspace-write sandbox constraints. Full hidden system/developer instructions are not included.",
+  "task": "Evaluate, under Ontario law as of May 11, 2026, whether a Toronto automotive-parts manufacturer mishandled a CFO’s heat-of-the-moment resignation, attempted rescission, and the public posting of the CFO job opening using an AI candidate sorting system.",
+  "termination_reason": "task_complete",
+  "total_steps": 13,
+  "total_turns": 1,
+  "trace_id": "fsy_c_64p76d",
+  "trace_mode": "retraced",
+  "trace_slug": "ontario-employment-law-analysis-trace"
+}

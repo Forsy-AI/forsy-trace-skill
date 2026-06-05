@@ -1,0 +1,41 @@
+{
+  "schema_version": "forsy-v2",
+  "collection_id": "fsy_c_iimn74",
+  "prior_collection_id": null,
+  "trace_mode": "retraced",
+  "task": "Identify and explain issues in an Ontario shareholders' agreement non-compete and non-solicitation clause, then redraft each problematic portion while matching the existing drafting style and considering matter-specific facts.",
+  "captured_at": "2026-05-11T23:22:59.908967",
+  "total_steps": 6,
+  "total_turns": 1,
+  "positive_pct": 83,
+  "directive_signals": 0,
+  "goal_notes": "The user received a completed legal drafting review with Ontario statutory context, common-law restrictive covenant considerations, issue explanations, minimal redrafts, a consolidated clause, and unresolved factual points. No user correction or follow-up occurred before collection creation. Timestamps for the original work steps were not available from the accessible transcript, so step times are null.",
+  "human_feedback": {
+    "corrections": 0,
+    "approvals": 0,
+    "clarifications": 0,
+    "new_instructions": 0
+  },
+  "activity_started_at": null,
+  "activity_ended_at": "2026-05-11T23:20:22.589Z",
+  "system_prompt": "Private system/developer instructions were present but are not reproduced. The agent was instructed to answer as a coding/research assistant, browse for current or unstable facts, respect workspace and sandbox constraints, and provide concise final answers.",
+  "skills": [
+    "web-browsing available",
+    "Forsy collection instructions loaded for submission only"
+  ],
+  "memory": null,
+  "agent_config": {
+    "framework": "Codex desktop",
+    "environment_type": "projectless workspace",
+    "os_platform": "macOS",
+    "shell": "zsh",
+    "working_directory": "/Users/zachgiboney/Documents/Codex/2026-05-11/identify-and-explain-any-issues-in-3",
+    "sandboxed": true,
+    "sandbox_mode": "workspace-write",
+    "internet_access": "available through web.run; command network restricted unless approved",
+    "timezone": "America/Toronto",
+    "current_date": "2026-05-11"
+  },
+  "learning": "For legal drafting review involving restrictive covenants, verify the current statutory framework first, then separate enforceability risks from pure drafting defects and redraft narrowly with minimal edits to preserve the document's style.",
+  "termination_reason": "task_complete"
+}
